@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="area">
+
+        <div id="menu">
+            <p id="menu_txt">Selecione uma das opções abaixo</p>
+            <button onclick="btn01()">1. Cadastrar Alunos</button>
+            <button onclick="btn02()">2. Relatório de Alunos em ordem crescente por Nome</button>
+            <button onclick="btn03()">3. Relatório de Alunos em ordem decrescente por RA</button>
+            <button onclick="btn04()">4. Relatório de Alunos em ordem crescente por Nome, apenas dos Aprovados</button>
+            <button onclick="btn05()">5. Encerre a execução do programa</button>
+        </div>
+
+        <div id="result">
+            <h1>Sistema de Cadastro de Alunos</h1>
+
+            <div id="op1" style="display: none">
+                
+                <form>
+                    <p>Dados do Aluno</p>
+
+                    <input type="text" id="nome_txt" placeholder=" Nome">
+                    
+                    <input type="text" id="ra_txt" placeholder=" RA">
+                  
+                    <input type="text" id="idade_txt" placeholder=" Idade">
+                    Sexo
+                    <div> 
+                        <label id="sexo">
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                        <label id="sexo">
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                        </label>
+                    </div>
+                    
+                    <input type="text" id="media_txt" placeholder=" Média">
+
+                    <input type="button" id="btn01_cad" onclick="realizarCad()" value="Realizar Cadastro">
+                </form>
+            </div>
+
+            <div id="op2" style="display: none">
+            </div>
+
+            <div id="op3" style="display: none">
+            </div>
+
+            <div id="op4" style="display: none">
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
